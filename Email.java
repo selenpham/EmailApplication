@@ -14,9 +14,6 @@ public class Email {
 	private String alternateEmail;
 	private String companySuffix = "ayucompany.com";
 	
-	
-
-	
 // Contructor to receive the fname, lname
 	public Email(String firstName, String lastName) {
 		this.firstName = firstName;
@@ -55,11 +52,11 @@ public class Email {
 		return new String(password);
 		
 	}
-	
+
 	// set the mailbox capacity
 	public void setMailboxCapacity(int capacity) {
 		this.mailboxCapacity = capacity;
-		}
+	}
 	//get the mailbox capacity
 	public int getMailboxCapacity() {
 		return mailboxCapacity;		
@@ -81,10 +78,10 @@ public class Email {
 	public String getPassword() {
 		return password;		
 	}
-		public String showInfo() {
-			return "DISPLAY NAME:" +firstName+ " "+ lastName + "\n"+
-					"COMPANY EMAIL: "+ email + "\n"+
-					"MAIL BOX CAPACITY: " +mailboxCapacity +"mb";
-		}
+	public String showInfo() {
+		return "DISPLAY NAME:" +firstName+ " "+ lastName + "\n"+
+			"COMPANY EMAIL: "+ email + "\n"+
+			"MAIL BOX CAPACITY: " +mailboxCapacity +"mb";
+	}
 		
 }
